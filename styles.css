@@ -1,12 +1,12 @@
 /* Farben überschreiben */
 :root {
-    --bs-primary: #f18f6e; /* Hauptfarbe (Buttons, Links) */
+    --bs-primary: #f18f6e;  /* Hauptfarbe (Buttons, Links) */
     --bs-secondary: #614346; /* Zweite Farbe */
-    --bs-success: #c0cda6; /* Erfolgsfarbe */
-    --bs-info: #fcd9b5; /* Infotexte */
-    --bs-light: #fcd9b5; /* Helle Hintergrundfarbe */
-    --bs-dark: #614346; /* Dunkler Text und Hintergrund */
-    --bs-body-bg: #fcd9b5; /* Seitenhintergrund */
+    --bs-success: #c0cda6;   /* Erfolgsfarbe */
+    --bs-info: #fcd9b5;      /* Infotexte */
+    --bs-light: #fcd9b5;     /* Helle Hintergrundfarbe */
+    --bs-dark: #614346;      /* Dunkler Text und Hintergrund */
+    --bs-body-bg: #fcd9b5;   /* Seitenhintergrund */
     --bs-body-color: #614346; /* Standardtextfarbe */
 }
 
@@ -24,16 +24,21 @@ p, a, li {
     color: var(--bs-body-color);
 }
 
-/* Navbar-Stil */
-.navbar {
-    background-color: var(--bs-secondary);
-}
-
-.navbar-brand, .nav-link {
+/* ----------------------------------- */
+/* NAVBAR - überschreibt bg-body-tertiary */
+/* ----------------------------------- */
+.navbar.bg-body-tertiary {
+    background-color: var(--bs-secondary) !important;
     color: var(--bs-light) !important;
 }
 
-.navbar-brand:hover, .nav-link:hover {
+.navbar-brand,
+.nav-link {
+    color: var(--bs-light) !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
     color: var(--bs-primary) !important;
 }
 
@@ -42,24 +47,23 @@ p, a, li {
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
 }
-
 .btn-primary:hover {
     background-color: var(--bs-secondary);
     border-color: var(--bs-secondary);
 }
 
-/* Footer */
-footer {
-    background-color: var(--bs-success);
-    color: var(--bs-secondary);
+/* ----------------------------------- */
+/* FOOTER - überschreibt bg-light */
+/* ----------------------------------- */
+footer.bg-light {
+    background-color: var(--bs-success) !important;
+    color: var(--bs-secondary) !important;
 }
-
-footer a {
-    color: var(--bs-secondary);
+footer.bg-light a {
+    color: var(--bs-secondary) !important;
 }
-
-footer a:hover {
-    color: var(--bs-primary);
+footer.bg-light a:hover {
+    color: var(--bs-primary) !important;
 }
 
 /* Karten */
@@ -67,37 +71,32 @@ footer a:hover {
     border: 1px solid var(--bs-secondary);
     background-color: var(--bs-light);
 }
-
 .card-title {
     color: var(--bs-secondary);
 }
-
 .card-text {
     color: var(--bs-body-color);
 }
-
 .card img {
     border-bottom: 1px solid var(--bs-secondary);
 }
 
-/* Hintergrundfarben */
+/* Hintergrundfarben (falls du .bg-secondary etc. nutzen willst) */
 .bg-secondary {
     background-color: var(--bs-secondary) !important;
     color: var(--bs-light) !important;
 }
 
+/* Text-Farben */
 .text-white {
     color: var(--bs-light) !important;
 }
-
 .text-black {
     color: var(--bs-dark) !important;
 }
-
 .text-primary {
     color: var(--bs-primary) !important;
 }
-
 .text-secondary {
     color: var(--bs-secondary) !important;
 }
@@ -107,7 +106,6 @@ table {
     background-color: var(--bs-light);
     border-color: var(--bs-secondary);
 }
-
 th, td {
     color: var(--bs-body-color);
     border: 1px solid var(--bs-secondary);
@@ -119,7 +117,6 @@ input, select, textarea {
     color: var(--bs-body-color);
     border: 1px solid var(--bs-secondary);
 }
-
 input:focus, select:focus, textarea:focus {
     border-color: var(--bs-primary);
     box-shadow: 0 0 5px var(--bs-primary);
