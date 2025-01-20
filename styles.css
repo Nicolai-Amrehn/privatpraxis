@@ -1,13 +1,13 @@
 /* Farben überschreiben */
 :root {
-    --bs-primary: #f18f6e;  /* Hauptfarbe (Buttons, Links) */
-    --bs-secondary: #614346; /* Zweite Farbe */
-    --bs-success: #c0cda6;   /* Erfolgsfarbe */
-    --bs-info: #fcd9b5;      /* Infotexte */
-    --bs-light: #fcd9b5;     /* Helle Hintergrundfarbe */
-    --bs-dark: #614346;      /* Dunkler Text und Hintergrund */
-    --bs-body-bg: #fcd9b5;   /* Seitenhintergrund */
-    --bs-body-color: #614346; /* Standardtextfarbe */
+    --bs-primary: #ffac81;  /* Hauptfarbe (Buttons, Links) */
+    --bs-secondary: #4b644a; /* Zweite Farbe */
+    --bs-success: #94849b;   /* Erfolgsfarbe */
+    --bs-info: #ffac81;      /* Infotexte */
+    --bs-light: #ffac81;     /* Helle Hintergrundfarbe */
+    --bs-dark: #4b644a;      /* Dunkler Text und Hintergrund */
+    --bs-body-bg: #ffeedb;   /* Seitenhintergrund */
+    --bs-body-color: #4b644a; /* Standardtextfarbe */
 }
 
 /* Globaler Stil */
