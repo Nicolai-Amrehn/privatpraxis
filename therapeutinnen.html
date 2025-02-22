@@ -42,82 +42,383 @@
     </header>
 
     <main class="my-5">
-        <div class="container">
-            <h1 class="mb-4">Unsere Therapeutinnen</h1>
-
-            <!-- Therapeutinnen-Profile -->
-            <div id="mona-buerger" class="mb-5">
-                <h2>Mona Bürger</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="https://picsum.photos/id/500/400/300" alt="Mona Bürger" class="img-fluid rounded">
+        <body>
+            <div class="container mt-4">
+                <h1 class="text-center">Unsere Therapeutinnen</h1>
+                
+                <nav class="nav nav-pills flex-column flex-sm-row my-4">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#mona">Mona Bürger</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#lena">Lena Göbel</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#johanna">Johanna Hertlein</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#sarah">Sarah Hübner</a>
+                </nav>
+                
+                <div id="mona" class="container py-5">
+                    <!-- Header with name and image -->
+                    <div class="row mb-5">
+                        <div class="col-md-3 text-center">
+                            <img src="/api/placeholder/250/250" alt="Mona Bürger" class="img-fluid rounded-circle mb-3">
+                        </div>
+                        <div class="col-md-9">
+                            <h1 class="display-4 mb-2">Mona Bürger</h1>
+                            <h2 class="h4 text-muted mb-4">M.Sc. Psychologin, Verhaltenstherapie und Traumatherapie</h2>
+                            <div class="d-flex gap-3">
+                                <span class="badge bg-primary">Deutsch</span>
+                                <span class="badge bg-secondary">English (C1)</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <p>Mona Bürger ist eine erfahrene Therapeutin mit Spezialisierung auf kognitive Verhaltenstherapie. Sie hat über 10 Jahre Erfahrung in der Behandlung von Angststörungen und Depressionen.</p>
-                        <p>Qualifikationen:</p>
-                        <ul>
-                            <li>Master in Psychologie</li>
-                            <li>Approbation in Verhaltenstherapie</li>
-                            <li>Zertifizierung für Traumabehandlung</li>
-                        </ul>
+            
+                    <!-- About Section -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Über mich</h3>
+                            <p class="lead">Mit meiner Arbeit möchte ich Sie unterstützen, Einblicke in die Ursprünge ihrer Problematik zu bekommen, belastende Situationen aktiv und selbstbestimmt zu bewältigen und neue Perspektiven zu entwickeln.</p>
+                            <p>Therapeutisches Arbeiten sehe ich als gemeinsame Reise an, auf der ich Sie in einem geschützten Raum professionell begleite, Sie aber bestimmen, in welche Richtung und mit welcher Geschwindigkeit wir uns auf den Weg machen.</p>
+                        </div>
                     </div>
+            
+                    <!-- Treatment Focus and Methods -->
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Behandlungsschwerpunkte</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-info text-dark">Berufs- und Lebenskrisen</span>
+                                <span class="badge bg-info text-dark">Akut- und Krisenintervention</span>
+                                <span class="badge bg-info text-dark">Traumafolgestörungen</span>
+                                <span class="badge bg-info text-dark">Trauerbegleitung</span>
+                                <span class="badge bg-info text-dark">Ängste/Panikanfälle</span>
+                                <span class="badge bg-info text-dark">Essstörungen</span>
+                                <span class="badge bg-info text-dark">Depressive Störungen</span>
+                                <span class="badge bg-info text-dark">Psychosomatische Erkrankungen</span>
+                                <span class="badge bg-info text-dark">Stress und Burnout</span>
+                                <span class="badge bg-info text-dark">Sexualität</span>
+                                <span class="badge bg-info text-dark">Sucht</span>
+                                <span class="badge bg-info text-dark">Zwang</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Verfahren</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-success">Verhaltenstherapie</span>
+                                <span class="badge bg-success">Traumatherapie</span>
+                                <span class="badge bg-success">EMDR</span>
+                                <span class="badge bg-success">Entspannungsverfahren</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Qualifications and Settings -->
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Qualifikationen</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ M.Sc. Psychologin, Approbation in Verhaltenstherapie (AVT Köln)</li>
+                                <li class="mb-2">✓ Zugelassen über die Kassenärztlichen Vereinigung Nordrhein</li>
+                                <li>✓ Regelmäßige Teilnahme an Qualitätszirkeln, Intervisionen, Supervisionen</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Setting</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">➤ Einzel- und Gruppentherapie</li>
+                                <li class="mb-2">➤ Video Sitzungen auf Anfrage möglich</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <!-- Specializations -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Psychotraumatherapie</h3>
+                            <p>Ein besonderer Schwerpunkt meiner Arbeit liegt in der Psychotraumatherapie, insbesondere mit dem Verfahren EMDR (Eye Movement Desensitization and Reprocessing). EMDR ist eine wissenschaftlich fundierte Methode, die sich bewährt hat, um traumatische Erlebnisse zu verarbeiten und emotionale Belastungen nachhaltig zu reduzieren.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Group Therapy -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Gruppentherapie</h3>
+                            <p>Eine für mich bedeutsame psychotherapeutische Wirkmöglichkeit liegt in der Gruppentherapie. Wir alle sind soziale Wesen, die über zwischenmenschliche Kontakterfahrungen unser Handeln, Fühlen und Denken erleben und verändern.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Footer -->
+                    <footer class="border-top pt-4 mt-5">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p class="text-muted">Mitglied der Psychotherapeutenkammer NRW<br>
+                                Eingetragen ins Facharztregister der KVNO</p>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
-            </div>
-
-            <div id="lena-goebel" class="mb-5">
-                <h2>Lena Göbel</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="https://picsum.photos/id/501/400/300" alt="Lena Göbel" class="img-fluid rounded">
+                <div id="lena" class="container py-5">
+                    <!-- Header with name and image -->
+                    <div class="row mb-5">
+                        <div class="col-md-3 text-center">
+                            <img src="/api/placeholder/250/250" alt="Lena Göbel" class="img-fluid rounded-circle mb-3">
+                        </div>
+                        <div class="col-md-9">
+                            <h1 class="display-4 mb-2">Lena Göbel</h1>
+                            <h2 class="h4 text-muted mb-4">M.Sc. Psychologische Psychotherapeutin (Verhaltenstherapie)</h2>
+                            <div class="d-flex gap-3">
+                                <span class="badge bg-primary">Deutsch</span>
+                                <span class="badge bg-secondary">English</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <p>Lena Göbel ist auf systemische Therapie und Paarberatung spezialisiert. Sie unterstützt Einzelpersonen und Paare dabei, ihre Beziehungen zu stärken und Konflikte zu bewältigen.</p>
-                        <p>Qualifikationen:</p>
-                        <ul>
-                            <li>Diplom in Psychologie</li>
-                            <li>Weiterbildung in systemischer Therapie</li>
-                            <li>Experte für Konfliktmanagement</li>
-                        </ul>
+            
+                    <!-- About Section -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Über mich</h3>
+                            <p class="lead">Ich bin kognitive Verhaltenstherapeutin und lege großen Wert auf eine Begegnung auf Augenhöhe. Eine vertrauensvolle therapeutische Beziehung ist für mich die Grundlage jeder erfolgreichen Therapie.</p>
+                            <p>Mir ist es wichtig, einen Raum zu schaffen, in dem sich meine Patient*innen sicher und verstanden fühlen.</p>
+                        </div>
                     </div>
+            
+                    <!-- Professional Experience -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Beruflicher Werdegang</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">✓ Psychologiestudium in den Niederlanden</li>
+                                <li class="mb-3">✓ Weiterbildung zur Verhaltenstherapeutin (AVT Köln)</li>
+                                <li class="mb-3">✓ Psychiatrische Klinik Königshof, Krefeld</li>
+                                <li class="mb-3">✓ Institutsambulanz Barbarossaplatz</li>
+                                <li>✓ Ambulante Praxis Cortez (2023-2025)</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <!-- Therapeutic Approach -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Therapeutischer Ansatz</h3>
+                            <p>Meine therapeutische Arbeit basiert auf der kognitiven Verhaltenstherapie (KVT), einem wissenschaftlich fundierten Verfahren. Dabei spielen die individuellen Grundannahmen, die wir über uns selbst, andere und die Welt haben, eine zentrale Rolle.</p>
+                            <p>In meiner Arbeit orientiere ich mich stets an den individuellen Bedürfnissen meiner Patient*innen und begleite sie dabei, neue Perspektiven und Wege zu entwickeln, um Herausforderungen zu bewältigen und persönliche Ziele zu erreichen.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Treatment Options -->
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Behandlungsangebot</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">➤ Verhaltenstherapie im Einzelsetting</li>
+                                <li class="mb-3">➤ Entspannungsverfahren</li>
+                                <li>➤ Therapie im Präsenz- oder Videoformat möglich</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Qualifikationen</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">✓ M.Sc. in Psychologie</li>
+                                <li class="mb-3">✓ Approbation für Verhaltenstherapie (AVT Köln)</li>
+                                <li>✓ Zugelassen über die Kassenärztlichen Vereinigung Nordrhein</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <!-- Quality Assurance -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="bg-light p-4 rounded">
+                                <h3 class="border-bottom pb-2 mb-4">Qualitätssicherung</h3>
+                                <p class="mb-0">Ich nehme regelmäßig an Qualitätszirkeln, Intervisionen, Supervisionen sowie Fort- und Weiterbildungen gemäß den Vorgaben der Berufsordnung der PTK-NRW teil.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Footer -->
+                    <footer class="border-top pt-4 mt-5">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p class="text-muted">Mitglied der Psychotherapeutenkammer NRW<br>
+                                Eingetragen ins Facharztregister der KVNO</p>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
-            </div>
-
-            <div id="johanna-hertlein" class="mb-5">
-                <h2>Johanna Hertlein</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="https://picsum.photos/id/502/400/300" alt="Johanna Hertlein" class="img-fluid rounded">
+             
+                <div id="johanna" class="container py-5">
+                    <!-- Header with name and image -->
+                    <div class="row mb-5">
+                        <div class="col-md-3 text-center">
+                            <img src="IMG10_10.jpg" alt="Johanna Hertlein" class="img-fluid rounded-circle mb-3">
+                        </div>
+                        <div class="col-md-9">
+                            <h1 class="display-4 mb-2">Johanna Hertlein</h1>
+                            <h2 class="h4 text-muted">M.Sc. Psychologin</h2>
+                            <h3 class="h5 text-muted mb-4">Tiefenpsychologisch fundierte Psychotherapie</h3>
+                            <div class="d-flex gap-3">
+                                <span class="badge bg-primary">Deutsch</span>
+                                <span class="badge bg-secondary">English</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <p>Johanna Hertlein hat sich auf Kinder- und Jugendtherapie spezialisiert. Mit viel Einfühlungsvermögen hilft sie jungen Menschen, ihre Herausforderungen zu meistern.</p>
-                        <p>Qualifikationen:</p>
-                        <ul>
-                            <li>Master in Kinder- und Jugendpsychologie</li>
-                            <li>Zertifizierung für Spieltherapie</li>
-                            <li>Schulpsychologische Beratung</li>
-                        </ul>
+            
+                    <!-- About Section -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Über mich</h3>
+                            <p class="lead">In meiner Arbeit begleite und unterstütze ich Menschen in ihrem persönlichen Prozess zu mehr Klarheit, Selbstbestimmung und Integrität.</p>
+                            <p>Als zuverlässige und bodenständige Person schaffe ich einen Raum, in dem Sie sich gesehen und wertgeschätzt fühlen können – so, wie Sie sind. In einem solchen Rahmen werden Wachstum und Veränderung möglich. Ich begegne jeder Person unvoreingenommen und mit Neugier, da jede eine einzigartige Geschichte in sich trägt.</p>
+                        </div>
                     </div>
+            
+                    <!-- Therapeutic Approach -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Therapeutischer Ansatz</h3>
+                            <div class="bg-light p-4 rounded">
+                                <p>Als tiefenpsychologisch fundierte Psychotherapeutin verstehe ich das Unbewusste als zentralen Bestandteil menschlicher Erfahrungen. Dabei kann es an manchen Stellen in der Behandlung Sinn machen, die frühen Lebensjahre zu betrachten, da viele unbewusste Konflikte und Verhaltensweisen ihren Ursprung in unseren ersten Beziehungserfahrungen haben.</p>
+                                <p class="mb-0">Symptome werden als Ausdruck innerlicher Konflikte und als Lösungsversuch betrachtet, der in Ihrer jetzigen Lebenssituation nicht (mehr) hilfreich ist. Es können zum Teil intensive Gefühle aufkommen, die im Rahmen der Behandlung Raum finden und Wertschätzung erfahren. Häufig drücken sich unbewusste Prozesse auch physisch aus, weswegen ich in meiner Arbeit auch körpertherapeutische Methoden mit einbeziehe.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Treatment Options -->
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Behandlungsangebot</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">➤ Tiefenpsychologisch fundierte Einzel- und Gruppentherapie</li>
+                                <li class="mb-3">➤ Psyrena Nachsorge Gruppen (DRV) nach Ihrer psychosomatischen Reha</li>
+                                <li class="mb-3">➤ Online Sitzungen möglich (max. 50% der Behandlung)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Qualifikationen</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">✓ M.Sc. Psychologin, Universität Trier</li>
+                                <li class="mb-3">✓ Approbation als Psychologische Psychotherapeutin (APP Köln)</li>
+                                <li class="mb-3">✓ Psyrena Therapeutin (Zulassung durch DRV Rheinland)</li>
+                                <li>✓ Zugelassen über die Kassenärztlichen Vereinigung Nordrhein</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <!-- Memberships -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Mitgliedschaften</h3>
+                            <ul class="list-unstyled d-flex flex-wrap gap-4">
+                                <li><span class="badge bg-dark p-2">Psychotherapeutenkammer NRW</span></li>
+                                <li><span class="badge bg-dark p-2">Deutsche Psychotherapeuten Vereinigung e.V.</span></li>
+                                <li><span class="badge bg-dark p-2">Facharztregister KVNO</span></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <!-- Quality Assurance -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="bg-light p-4 rounded">
+                                <h3 class="border-bottom pb-2 mb-4">Qualitätssicherung</h3>
+                                <p class="mb-0">Ich nehme regelmäßig an Qualitätszirkeln, Intervisionen, Supervisionen sowie Fort- und Weiterbildungen gemäß den Vorgaben der Berufsordnung der PTK-NRW teil.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Footer -->
+                    <footer class="border-top pt-4 mt-5">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p class="text-muted">Zugelassen für tiefenpsychologisch fundierte Psychotherapie: Einzel- und Gruppentherapie</p>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
-            </div>
-
-            <div id="sarah-huebner" class="mb-5">
-                <h2>Sarah Hübner</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="https://picsum.photos/id/503/400/300" alt="Sarah Hübner" class="img-fluid rounded">
+                <div id="sarah" class="container py-5">
+                    <!-- Header with name and image -->
+                    <div class="row mb-5">
+                        <div class="col-md-3 text-center">
+                            <img src="IMG_Sarah_Huebner.jpg" alt="Sarah Hübner" class="img-fluid rounded-circle mb-3">
+                        </div>
+                        <div class="col-md-9">
+                            <h1 class="display-4 mb-2">Sarah Hübner</h1>
+                            <h2 class="h4 text-muted">M.Sc. Psychologische Psychotherapeutin</h2>
+                            <h3 class="h5 text-muted mb-4">Verhaltenstherapie</h3>
+                            <div class="d-flex gap-3">
+                                <span class="badge bg-primary">Deutsch</span>
+                                <span class="badge bg-secondary">English</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <p>Sarah Hübner ist Expertin für Traumatherapie und Achtsamkeitsmethoden. Sie unterstützt Patienten dabei, schwierige Erfahrungen zu verarbeiten und innere Ruhe zu finden.</p>
-                        <p>Qualifikationen:</p>
-                        <ul>
-                            <li>Master in klinischer Psychologie</li>
-                            <li>Ausbildung in EMDR-Therapie</li>
-                            <li>Achtsamkeits- und Meditationscoach</li>
-                        </ul>
+                
+                    <!-- About Section -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Über mich</h3>
+                            <p class="lead">Als Verhaltenstherapeutin liegt mir die Unterstützung von Menschen in herausfordernden Lebenssituationen am Herzen.</p>
+                            <p>Ich analysiere gemeinsam mit meinen Klient*innen die aktuelle Situation und deren Ursprünge, um die Entwicklung der Symptomatik zu verstehen. Gemeinsam erarbeiten wir neue Perspektiven und Strategien, um mit Herausforderungen umzugehen und persönliche Ziele zu erreichen. Ich lege großen Wert auf einen vertrauensvollen Umgang, Transparenz und eine Behandlung auf Augenhöhe.</p>
+                        </div>
                     </div>
+                
+                    <!-- Therapeutic Approach -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Therapeutischer Ansatz</h3>
+                            <div class="bg-light p-4 rounded">
+                                <p>Meine Arbeit basiert auf den Methoden der kognitiven Verhaltenstherapie. Dabei werden problematische Denkmuster und Verhaltensweisen identifiziert und durch neue, hilfreiche Strategien ersetzt. Die Behandlung wird individuell an die Bedürfnisse meiner Klient*innen angepasst.</p>
+                                <p class="mb-0">Besonders wichtig ist mir eine offene und ehrliche Kommunikation, da ich davon überzeugt bin, dass sie die Grundlage für eine erfolgreiche Therapie bildet.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Treatment Options -->
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Behandlungsangebot</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">➤ Einzel- und Gruppentherapie</li>
+                                <li class="mb-3">➤ Therapie im Präsenz- oder Videoformat</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="border-bottom pb-2 mb-4">Qualifikationen</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">✓ M.Sc. in Psychologie</li>
+                                <li class="mb-3">✓ Approbation für Verhaltenstherapie (AVT Köln)</li>
+                                <li>✓ Zugelassen über die Kassenärztlichen Vereinigung Nordrhein (KVNO)</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Memberships -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <h3 class="border-bottom pb-2 mb-4">Mitgliedschaften</h3>
+                            <ul class="list-unstyled d-flex flex-wrap gap-4">
+                                <li><span class="badge bg-dark p-2">Psychotherapeutenkammer NRW</span></li>
+                                <li><span class="badge bg-dark p-2">Eintrag Facharztregister KVNO</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!-- Quality Assurance -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="bg-light p-4 rounded">
+                                <h3 class="border-bottom pb-2 mb-4">Qualitätssicherung</h3>
+                                <p class="mb-0">Ich nehme regelmäßig an Qualitätszirkeln, Intervisionen, Supervisionen sowie Fort- und Weiterbildungen gemäß den Vorgaben der Berufsordnung der PTK-NRW teil.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Footer -->
+                    <footer class="border-top pt-4 mt-5">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p class="text-muted">Zugelassen für Verhaltenstherapie: Einzel- und Gruppentherapie</p>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
-            </div>
-        </div>
+                
+        </body>        
     </main>
     <footer class="bg-light text-black text-center py-4">
         <div class="container">
