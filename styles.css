@@ -14,10 +14,12 @@
 body {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
+    font-family: 'Poppins', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--bs-secondary);
+    font-family: 'Lora', serif;
 }
 
 p, a, li {
@@ -29,12 +31,11 @@ p, a, li {
 /* ----------------------------------- */
 .navbar.bg-body-tertiary {
     background-color: var(--bs-secondary) !important;
-    color: var(--bs-light) !important;
 }
 
 .navbar-brand,
 .nav-link {
-    color: var(--bs-light) !important;
+    color: #ffeedb !important; /* Update text color */
 }
 
 .navbar-brand:hover,
@@ -56,7 +57,7 @@ p, a, li {
 /* FOOTER - überschreibt bg-light */
 /* ----------------------------------- */
 footer.bg-light {
-    background-color: var(--bs-success) !important;
+    background-color: #ffeedb !important; /* Update background color */
     color: var(--bs-secondary) !important;
 }
 footer.bg-light a {
