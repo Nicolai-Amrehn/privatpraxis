@@ -1,12 +1,12 @@
 /* Farben überschreiben */
 :root {
     --bs-primary: #ffac81;  /* Hauptfarbe (Buttons, Links) */
-    --bs-secondary: #4b644a; /* Zweite Farbe */
+    --bs-secondary: #96b195; /* Zweite Farbe */
     --bs-success: #94849b;   /* Erfolgsfarbe */
     --bs-info: #ffac81;      /* Infotexte */
     --bs-light: #ffac81;     /* Helle Hintergrundfarbe */
     --bs-dark: #4b644a;      /* Dunkler Text und Hintergrund */
-    --bs-body-bg: #ffeedb;   /* Seitenhintergrund */
+    --bs-body-bg: #fffdfb;   /* Seitenhintergrund */
     --bs-body-color: #4b644a; /* Standardtextfarbe */
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--bs-secondary);
+    color: var(--bs-dark);
     font-family: 'Lora', serif;
 }
 
