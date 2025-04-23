@@ -59,41 +59,61 @@
     <div class="row mb-5">
         <div class="col-md-6">
             <h3 class="border-bottom pb-2 mb-4">Kontaktformular</h3>
-            <form>
+            <form id="kontaktformular" action="https://formsubmit.co/nicolaiamrehn@posteo.de" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+            
                 <div class="mb-3">
                     <label class="form-label">Geschlecht</label><br>
-                    <input type="checkbox"> m
-                    <input type="checkbox"> w
-                    <input type="checkbox"> divers
-                    <input type="checkbox"> keine Angabe
+                    <input type="checkbox" name="Geschlecht[]" value="m"> m
+                    <input type="checkbox" name="Geschlecht[]" value="w"> w
+                    <input type="checkbox" name="Geschlecht[]" value="divers"> divers
+                    <input type="checkbox" name="Geschlecht[]" value="keine Angabe"> keine Angabe
                 </div>
+            
                 <div class="mb-3">
                     <label for="firstname" class="form-label">Vorname</label>
-                    <input type="text" class="form-control" id="firstname">
+                    <input type="text" class="form-control" id="firstname" name="Vorname" required>
                 </div>
+            
                 <div class="mb-3">
                     <label for="lastname" class="form-label">Nachname</label>
-                    <input type="text" class="form-control" id="lastname">
+                    <input type="text" class="form-control" id="lastname" name="Nachname" required>
                 </div>
+            
                 <div class="mb-3">
                     <label class="form-label">Art der Versicherung</label><br>
-                    <input type="checkbox"> Gesetzlich
-                    <input type="checkbox"> Privat
-                    <input type="checkbox"> Selbstzahler:in
-                    <input type="checkbox"> Beihilfe
-                    <input type="checkbox"> Freie Heilfürsorge
+                    <input type="checkbox" name="Versicherung[]" value="Gesetzlich"> Gesetzlich
+                    <input type="checkbox" name="Versicherung[]" value="Privat"> Privat
+                    <input type="checkbox" name="Versicherung[]" value="Selbstzahler:in"> Selbstzahler:in
+                    <input type="checkbox" name="Versicherung[]" value="Beihilfe"> Beihilfe
+                    <input type="checkbox" name="Versicherung[]" value="Freie Heilfürsorge"> Freie Heilfürsorge
                 </div>
+            
                 <div class="mb-3">
                     <label for="message" class="form-label">Ihr Anliegen (max. 360 Zeichen)</label>
-                    <textarea class="form-control" id="message" maxlength="360"></textarea>
+                    <textarea class="form-control" id="message" name="Nachricht" maxlength="360" required></textarea>
                 </div>
+            
                 <div class="mb-3">
                     <label for="email" class="form-label">E-Mail-Adresse</label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" name="E-Mail" required>
                 </div>
+            
                 <button type="submit" class="btn btn-primary">Absenden</button>
             </form>
-        </div>
+            
+            <script>
+            document.getElementById("kontaktformular").addEventListener("submit", function (e) {
+                // Warte einen Moment, damit das Formular wirklich abgeschickt wird
+                setTimeout(function () {
+                    alert("Vielen Dank! Ihre Nachricht wurde erfolgreich übermittelt.");
+                    // Optional: Formular zurücksetzen
+                    document.getElementById("kontaktformular").reset();
+                }, 300);
+            });
+            </script>
+            
         <div class="col-md-6 my-5 my-md-0">
             <h3 class="border-bottom pb-2 mb-4">Psychotherapie Annostraße</h3>
             <p>Annostraße 86, 50678 Köln.<br>4. Stock (Achtung, wir haben leider keinen Aufzug).</p>
@@ -103,16 +123,28 @@
                 <li>Buslinie 132/106: Haltestellen Severinskirche oder Rosenstraße</li>
                 <li>Buslinie 133: Haltestelle Rheinauhafen</li>
             </ul>
-            <div class="border rounded p-3">
-                <iframe 
+            <div class="map-wrapper border rounded p-3" style="position: relative; background: #eee; height: 300px; display: flex; align-items: center; justify-content: center; text-align: center;">
+                <div id="map-placeholder" style="padding: 1rem;">
+                    <p>Zum Schutz Ihrer Daten ist Google Maps deaktiviert.<br>Mit Klick auf „Karte anzeigen“ stimmen Sie zu, dass Inhalte von Google Maps geladen werden.</p>
+                    <button onclick="loadMap()" style="margin-top: 10px; padding: 8px 16px; cursor: pointer;">Karte anzeigen</button>
+                </div>
+            </div>
+            
+            <script>
+              function loadMap() {
+                const mapWrapper = document.querySelector('.map-wrapper');
+                mapWrapper.innerHTML = `
+                  <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.534055227622!2d6.959040876986929!3d50.91670305790461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf25309174a3ed%3A0x8d358f8b78e8b3b9!2sAnnostra%C3%9Fe%2086%2C%2050678%20K%C3%B6ln!5e0!3m2!1sde!2sde!4v1708573912345!5m2!1sde!2sde" 
                     width="100%" 
                     height="300" 
                     style="border:0;" 
-                    allowfullscreen="" 
+                    allowfullscreen 
                     loading="lazy">
-                </iframe>
-            </div>
+                  </iframe>`;
+              }
+            </script>
+            
         </div>
         </div>
     </div>
