@@ -67,27 +67,40 @@ footer.bg-light a:hover {
     color: var(--bs-primary) !important;
 }
 
-/* Karten */
+/* Karten - überarbeitete Version */
 .card {
     background-color: transparent;
+    transition: transform 0.2s ease;
 }
 .card-title {
     color: var(--bs-dark);
+    text-decoration: none;
 }
 .card-text {
     color: var(--bs-body-color);
+    text-decoration: underline;
 }
 .card img {
     border-bottom: none;
 }
 
+/* Fügen Sie diesen neuen Stil für Card-Links hinzu */
 .card-link {
     text-decoration: none;
     color: inherit;
 }
-.card-link:hover {
-    text-decoration: none;
-    color: var(--bs-primary);
+
+/* Hover-Effekte */
+.card-link:hover .card {
+    transform: translateY(-5px); /* Leichte Anhebung beim Hover */
+}
+.card-link:hover .card-title {
+    color: var(--bs-primary); /* Farbänderung für den Titel beim Hover */
+    text-decoration: none; /* Weiterhin keine Unterstreichung */
+}
+.card-link:hover .card-text {
+    color: var(--bs-primary); /* Farbänderung für "Mehr erfahren" */
+    text-decoration: underline; /* Bleibt unterstrichen */
 }
 
 /* Hintergrundfarben (falls du .bg-secondary etc. nutzen willst) */
