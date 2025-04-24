@@ -1,6 +1,6 @@
 /* Farben überschreiben */
 :root {
-    --bs-primary: #ffac81;  /* Hauptfarbe (Buttons, Links) */
+    --bs-primary: #ffe2c2;  /* Hauptfarbe (Buttons, Links) */
     --bs-secondary: #96b195; /* Zweite Farbe */
     --bs-success: #94849b;   /* Erfolgsfarbe */
     --bs-info: #ffac81;      /* Infotexte */
@@ -35,7 +35,7 @@ p, a, li {
 
 .navbar-brand,
 .nav-link {
-    color: #ffeedb !important; /* Update text color */
+    color: #fffdfb !important; /* Update text color */
 }
 
 .navbar-brand:hover,
@@ -67,7 +67,7 @@ footer.bg-light a:hover {
     color: var(--bs-primary) !important;
 }
 
-/* Karten - überarbeitete Version */
+/* Karten*/
 .card {
     background-color: transparent;
     transition: transform 0.2s ease;
@@ -84,7 +84,6 @@ footer.bg-light a:hover {
     border-bottom: none;
 }
 
-/* Fügen Sie diesen neuen Stil für Card-Links hinzu */
 .card-link {
     text-decoration: none;
     color: inherit;
@@ -103,7 +102,7 @@ footer.bg-light a:hover {
     text-decoration: underline; /* Bleibt unterstrichen */
 }
 
-/* Hintergrundfarben (falls du .bg-secondary etc. nutzen willst) */
+/* Hintergrundfarben */
 .bg-secondary {
     background-color: var(--bs-secondary) !important;
     color: var(--bs-light) !important;
@@ -123,7 +122,7 @@ footer.bg-light a:hover {
     color: var(--bs-secondary) !important;
 }
 
-/* Tabellen (falls verwendet) */
+/* Tabellen*/
 table {
     background-color: var(--bs-light);
     border-color: var(--bs-secondary);
