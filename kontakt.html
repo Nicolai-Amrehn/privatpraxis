@@ -46,7 +46,6 @@
 
     <main class="my-5">
         <div class="container">
-         <!-- Contact Section -->
     <div class="row mb-5">
         <div class="col-12">
             <h1 class="display-4 mb-3">Kontakt</h1>
@@ -57,7 +56,7 @@
     <div class="row mb-5">
         <div class="col-md-6">
             <h3 class="border-bottom pb-2 mb-4">Kontaktformular</h3>
-            <form id="kontaktformular" action="https://formsubmit.co/nicolaiamrehn@posteo.de" method="POST">
+            <form id="kontaktformular" action="https://formsubmit.co/info@psychotherapie-annostrasse.de" method="POST">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
             
@@ -103,10 +102,8 @@
             
             <script>
             document.getElementById("kontaktformular").addEventListener("submit", function (e) {
-                // Warte einen Moment, damit das Formular wirklich abgeschickt wird
                 setTimeout(function () {
                     alert("Vielen Dank! Ihre Nachricht wurde erfolgreich übermittelt.");
-                    // Optional: Formular zurücksetzen
                     document.getElementById("kontaktformular").reset();
                 }, 300);
             });
